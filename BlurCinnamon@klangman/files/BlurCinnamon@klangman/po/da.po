@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BlurCinnamon@klangman 1.5.2\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-"
 "extensions/issues\n"
-"POT-Creation-Date: 2026-06-06 17:40-0400\n"
+"POT-Creation-Date: 2026-07-02 14:23-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Alan Mortensen <over.tackiness223@passinbox.com>\n"
 "Language-Team: \n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#. 6.0/extension.js:2600 6.0/extension.js:2603 6.0/extension.js:2713
+#. 6.0/extension.js:2819 6.0/extension.js:2822 6.0/extension.js:2932
 msgid "Default window settings"
 msgstr "Standardvinduesindstillinger"
 
-#. 6.0/extension.js:2861
+#. 6.0/extension.js:3080
 msgid "Error"
 msgstr "Fejl"
 
-#. 6.0/extension.js:2862
+#. 6.0/extension.js:3081
 msgid ""
 "Unable to determine the application or the WM_CLASS of the previously "
 "focused window, therefore Blur Cinnamon effects can not be applied to that "
@@ -36,11 +36,11 @@ msgstr ""
 "vindue, der tidligere var i fokus, tilhører, og derfor kan Blur Cinnamon-"
 "effekterne ikke anvendes på dette vindue"
 
-#. 6.0/extension.js:3716
+#. 6.0/extension.js:3963
 msgid "Welcome to Blur Cinnamon"
 msgstr "Velkommen til Sløret Cinnamon"
 
-#. 6.0/extension.js:3717
+#. 6.0/extension.js:3964
 #, fuzzy
 msgid ""
 "Hope you are enjoying your new Panel, Expo, Overview and Alt-Tab effects.\n"
@@ -60,15 +60,15 @@ msgstr ""
 "kan også foretage ændringer i effektens egenskaber, såsom sløringens "
 "intensitet, farvemætning og dæmpning."
 
-#. 6.0/extension.js:3721
+#. 6.0/extension.js:3968
 msgid "Open Blur Cinnamon Settings"
 msgstr "Åbn Sløret Cinnamon-indstillinger"
 
-#. 6.0/extension.js:3806
+#. 6.0/extension.js:4058
 msgid "Testing Blur Cinnamon Notification Effects"
 msgstr "Tester Sløret Cinnamons underretningseffekter"
 
-#. 6.0/extension.js:3807
+#. 6.0/extension.js:4059
 msgid ""
 "This is how notifications will appear when using the current Blur Cinnamon "
 "Notification Popup effects.\n"
@@ -176,6 +176,15 @@ msgid ""
 msgstr ""
 "Bemærk: Underretningseffekter er i øjeblikket deaktiveret under fanebladet "
 "“Generel opsætning”."
+
+#. 6.0->settings-schema.json->osd-warning->description
+#, fuzzy
+msgid ""
+"Note: The On-Screen-Display effects are currently disabled under the "
+"\"General setup\" tab."
+msgstr ""
+"Bemærk: Paneleffekter er i øjeblikket deaktiveret under fanebladet “Generel "
+"opsætning”."
 
 #. 6.0->settings-schema.json->overview-warning->description
 msgid ""
@@ -484,6 +493,17 @@ msgstr ""
 "skal være indstillede til at være gennemsigtige, ellers er Sløret Cinnamon-"
 "effekter ikke synlige. "
 
+#. 6.0->settings-schema.json->enable-osd-effects->description
+msgid "On-screen display"
+msgstr ""
+
+#. 6.0->settings-schema.json->enable-osd-effects->tooltip
+msgid ""
+"Apply effects to the on-screen display (OSD) background. The OSD is used "
+"when changing volumn using the media keys, changing the screen brightness, "
+"and switching workspaces."
+msgstr ""
+
 #. 6.0->settings-schema.json->focused-window-backlight->description
 msgid "Focused window backlight effect"
 msgstr "Fokuseret vindues baggrundsbelysningseffekt"
@@ -578,6 +598,47 @@ msgstr ""
 "deaktiveres, hvis temaet allerede bruger gennemsigtige paneler, og du "
 "ønsker, at temaets indstillinger skal anvendes."
 
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->description
+#, fuzzy
+msgid ""
+"Override some of the standard Alt-Tab switcher theme settings (recommended)"
+msgstr "Tilsidesæt nogle af panelets temaindstillinger (anbefalet)"
+
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the standard Alt-Tab switcher transparency "
+"and background color settings. If this is disabled the extension will only "
+"apply a blur background under the switcher. This setting should only be "
+"disabled when the theme already uses a transparent switcher and you want the "
+"themes setting to apply."
+msgstr ""
+"Tillad denne udvidelse at ændre panelernes gennemsigtighed og "
+"baggrundsfarveindstillinger. Hvis dette er deaktiveret, vil udvidelsen kun "
+"anvende en sløret baggrund under panelerne. Denne indstilling bør kun "
+"deaktiveres, hvis temaet allerede bruger gennemsigtige paneler, og du "
+"ønsker, at temaets indstillinger skal anvendes."
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->description
+#, fuzzy
+msgid "Override some of the OSD theme settings (recommended)"
+msgstr "Tilsidesæt nogle af panelets temaindstillinger (anbefalet)"
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the OSD transparency and background color "
+"settings. If this is disabled the extension will only apply a blur "
+"background under the OSD. This setting should only be disabled when the "
+"theme already uses a transparent OSD and you want the themes setting to "
+"apply."
+msgstr ""
+"Tillad denne udvidelse at ændre panelernes gennemsigtighed og "
+"baggrundsfarveindstillinger. Hvis dette er deaktiveret, vil udvidelsen kun "
+"anvende en sløret baggrund under panelerne. Denne indstilling bør kun "
+"deaktiveres, hvis temaet allerede bruger gennemsigtige paneler, og du "
+"ønsker, at temaets indstillinger skal anvendes."
+
 #. 6.0->settings-schema.json->enable-overview-override->description
 #, fuzzy
 msgid "Override the generic effect settings for the Overview"
@@ -592,6 +653,7 @@ msgstr "Brug unikke effektindstillinger til Oversigten"
 #. 6.0->settings-schema.json->enable-appswitcher-override->tooltip
 #. 6.0->settings-schema.json->enable-tooltips-override->tooltip
 #. 6.0->settings-schema.json->enable-desklets-override->tooltip
+#. 6.0->settings-schema.json->enable-osd-override->tooltip
 msgid ""
 "Override the settings found on the \"Generic effect settings\" tab with "
 "unique settings for this cinnamon component."
@@ -636,6 +698,11 @@ msgstr "Brug unikke effektindstillinger til panelværktøjstip"
 #, fuzzy
 msgid "Override the generic effect settings for Desklets"
 msgstr "Brug unikke effektindstillinger til skrivebordsprogrammer"
+
+#. 6.0->settings-schema.json->enable-osd-override->description
+#, fuzzy
+msgid "Override the generic effect settings for OSD windows"
+msgstr "Brug unikke effektindstillinger til paneler"
 
 #. 6.0->settings-schema.json->enable-desklets-unique-settings->description
 msgid "Enable advanced options to apply unique settings for each Desklet"
@@ -801,6 +868,7 @@ msgstr "Dæmp/farvelæg baggrund (%)"
 #. 6.0->settings-schema.json->appswitcher-blendColor->description
 #. 6.0->settings-schema.json->tooltips-blendColor->description
 #. 6.0->settings-schema.json->desklets-blendColor->description
+#. 6.0->settings-schema.json->osd-blendColor->description
 msgid "Dimming overlay color"
 msgstr "Farve til dæmpningsoverlejring"
 
@@ -814,6 +882,7 @@ msgstr "Farve til dæmpningsoverlejring"
 #. 6.0->settings-schema.json->appswitcher-blendColor->tooltip
 #. 6.0->settings-schema.json->tooltips-blendColor->tooltip
 #. 6.0->settings-schema.json->desklets-blendColor->tooltip
+#. 6.0->settings-schema.json->osd-blendColor->tooltip
 msgid ""
 "Defines the color that is blended into the background based on the dimming "
 "control above. Use black for a normal dimming effect or some other color for "
@@ -834,6 +903,7 @@ msgstr "Ingen / gennemsigtig til baggrunden"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Simple static blur"
 msgstr "Enkel statisk sløring"
 
@@ -844,6 +914,7 @@ msgstr "Enkel statisk sløring"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian static blur"
 msgstr "Gaussisk statisk sløring"
 
@@ -858,6 +929,7 @@ msgstr "Gaussisk dynamisk sløring (hvis tilgængelig)"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 #, fuzzy
 msgid "Monte Carlo static blur"
 msgstr "Enkel statisk sløring"
@@ -873,6 +945,7 @@ msgstr "Gaussisk dynamisk sløring (hvis tilgængelig)"
 #. 6.0->settings-schema.json->desktop-blurType->description
 #. 6.0->settings-schema.json->appswitcher-blurType->description
 #. 6.0->settings-schema.json->desklets-blurType->description
+#. 6.0->settings-schema.json->osd-blurType->description
 msgid "Type of blur effect"
 msgstr "Type af sløringseffekt"
 
@@ -881,6 +954,7 @@ msgstr "Type af sløringseffekt"
 #. 6.0->settings-schema.json->expo-blurType->tooltip
 #. 6.0->settings-schema.json->desktop-blurType->tooltip
 #. 6.0->settings-schema.json->desklets-blurType->tooltip
+#. 6.0->settings-schema.json->osd-blurType->tooltip
 msgid "What type of blur algorithm should be used to blur the background"
 msgstr "Hvilken type sløringsalgoritme skal bruges til at sløre baggrunden."
 
@@ -894,6 +968,7 @@ msgstr "Hvilken type sløringsalgoritme skal bruges til at sløre baggrunden."
 #. 6.0->settings-schema.json->appswitcher-radius->description
 #. 6.0->settings-schema.json->tooltips-radius->description
 #. 6.0->settings-schema.json->desklets-radius->description
+#. 6.0->settings-schema.json->osd-radius->description
 #, fuzzy
 msgid "Blur intensity"
 msgstr "Gaussisk sløringsintensitet"
@@ -908,6 +983,7 @@ msgstr "Gaussisk sløringsintensitet"
 #. 6.0->settings-schema.json->appswitcher-radius->tooltip
 #. 6.0->settings-schema.json->tooltips-radius->tooltip
 #. 6.0->settings-schema.json->desklets-radius->tooltip
+#. 6.0->settings-schema.json->osd-radius->tooltip
 msgid ""
 "Adjusts the intensity of the blur effect by changing the radius use by the "
 "effect."
@@ -924,6 +1000,7 @@ msgstr ""
 #. 6.0->settings-schema.json->appswitcher-saturation->description
 #. 6.0->settings-schema.json->tooltips-saturation->description
 #. 6.0->settings-schema.json->desklets-saturation->description
+#. 6.0->settings-schema.json->osd-saturation->description
 msgid "Background color saturation"
 msgstr "Baggrundens farvemætning"
 
@@ -937,6 +1014,7 @@ msgstr "Baggrundens farvemætning"
 #. 6.0->settings-schema.json->appswitcher-saturation->tooltip
 #. 6.0->settings-schema.json->tooltips-saturation->tooltip
 #. 6.0->settings-schema.json->desklets-saturation->tooltip
+#. 6.0->settings-schema.json->osd-saturation->tooltip
 msgid ""
 "Adjusts the color saturation of the background image from gray-scale to full "
 "color."
@@ -990,6 +1068,7 @@ msgstr ""
 #. 6.0->settings-schema.json->desktop-blurType->options
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "None"
 msgstr "Ingen"
 
@@ -1031,6 +1110,7 @@ msgstr "Gennemsigtig til baggrund"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian dynamic blur"
 msgstr "Gaussisk dynamisk sløring"
 
@@ -1040,6 +1120,7 @@ msgstr "Gaussisk dynamisk sløring"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 #, fuzzy
 msgid "Monte Carlo dynamic blur"
 msgstr "Gaussisk dynamisk sløring"
@@ -1117,6 +1198,7 @@ msgstr ""
 
 #. 6.0->settings-schema.json->desktop-opacity->description
 #. 6.0->settings-schema.json->desklets-opacity->description
+#. 6.0->settings-schema.json->osd-opacity->description
 msgid "Dim/Colorize background Image (%)"
 msgstr "Dæmp/farvelæg baggrundsbillede (%)"
 
@@ -1172,6 +1254,15 @@ msgid ""
 "blur type can be used for the standard switcher but static blurring is "
 "always used for the 3D switchers as they do not benefit from dynamic effects."
 msgstr ""
+
+#. 6.0->settings-schema.json->osd-slider-effects->description
+msgid "Apply effects to volumn and brightness OSD windows"
+msgstr ""
+
+#. 6.0->settings-schema.json->osd-workspace-effects->description
+#, fuzzy
+msgid "Apply effects to the workspace switching OSD window"
+msgstr "Brug unikke effektindstillinger til Alt-Tab-programskifteren"
 
 #. 6.0->settings-schema.json->windows-inclusion-list->description
 msgid "Application window inclusion list"

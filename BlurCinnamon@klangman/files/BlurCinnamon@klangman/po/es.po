@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: BlurCinnamon@klangman 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-"
 "extensions/issues\n"
-"POT-Creation-Date: 2026-06-06 17:40-0400\n"
+"POT-Creation-Date: 2026-07-02 14:23-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
 
-#. 6.0/extension.js:2600 6.0/extension.js:2603 6.0/extension.js:2713
+#. 6.0/extension.js:2819 6.0/extension.js:2822 6.0/extension.js:2932
 msgid "Default window settings"
 msgstr "Configuración predeterminada de la ventana"
 
-#. 6.0/extension.js:2861
+#. 6.0/extension.js:3080
 msgid "Error"
 msgstr "Error"
 
-#. 6.0/extension.js:2862
+#. 6.0/extension.js:3081
 msgid ""
 "Unable to determine the application or the WM_CLASS of the previously "
 "focused window, therefore Blur Cinnamon effects can not be applied to that "
@@ -35,11 +35,11 @@ msgstr ""
 "tenía el foco anteriormente, por lo que no se pueden aplicar los efectos de "
 "Desenfoque Cinnamon a esa ventana"
 
-#. 6.0/extension.js:3716
+#. 6.0/extension.js:3963
 msgid "Welcome to Blur Cinnamon"
 msgstr "Bienvenido a Desenfoque de Cinnamon"
 
-#. 6.0/extension.js:3717
+#. 6.0/extension.js:3964
 msgid ""
 "Hope you are enjoying your new Panel, Expo, Overview and Alt-Tab effects.\n"
 "\n"
@@ -58,15 +58,15 @@ msgstr ""
 "También puedes modificar las propiedades de los efectos, como la intensidad "
 "del desenfoque, la saturación del color y el atenuado."
 
-#. 6.0/extension.js:3721
+#. 6.0/extension.js:3968
 msgid "Open Blur Cinnamon Settings"
 msgstr "Abrir configuración de Desenfoque de Cinnamon"
 
-#. 6.0/extension.js:3806
+#. 6.0/extension.js:4058
 msgid "Testing Blur Cinnamon Notification Effects"
 msgstr "Probando los efectos de notificación de Desenfoque de Cinnamon"
 
-#. 6.0/extension.js:3807
+#. 6.0/extension.js:4059
 msgid ""
 "This is how notifications will appear when using the current Blur Cinnamon "
 "Notification Popup effects.\n"
@@ -179,6 +179,15 @@ msgid ""
 msgstr ""
 "Nota: Los efectos de notificación están desactivados actualmente en la "
 "pestaña \"Configuración general\"."
+
+#. 6.0->settings-schema.json->osd-warning->description
+#, fuzzy
+msgid ""
+"Note: The On-Screen-Display effects are currently disabled under the "
+"\"General setup\" tab."
+msgstr ""
+"Nota: Los efectos del panel están actualmente desactivados en la pestaña "
+"\"Configuración general\"."
 
 #. 6.0->settings-schema.json->overview-warning->description
 msgid ""
@@ -487,6 +496,17 @@ msgstr ""
 "para que sean transparentes y así poder ver los efectos de desenfoque de "
 "Cinnamon."
 
+#. 6.0->settings-schema.json->enable-osd-effects->description
+msgid "On-screen display"
+msgstr ""
+
+#. 6.0->settings-schema.json->enable-osd-effects->tooltip
+msgid ""
+"Apply effects to the on-screen display (OSD) background. The OSD is used "
+"when changing volumn using the media keys, changing the screen brightness, "
+"and switching workspaces."
+msgstr ""
+
 #. 6.0->settings-schema.json->focused-window-backlight->description
 msgid "Focused window backlight effect"
 msgstr "Efecto de retroiluminación de ventana enfocada"
@@ -582,6 +602,47 @@ msgstr ""
 "el tema ya utilice descripciones emergentes transparentes y se desee que se "
 "aplique la configuración del tema."
 
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->description
+#, fuzzy
+msgid ""
+"Override some of the standard Alt-Tab switcher theme settings (recommended)"
+msgstr "Anular algunos ajustes del tema de los paneles (recomendado)"
+
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the standard Alt-Tab switcher transparency "
+"and background color settings. If this is disabled the extension will only "
+"apply a blur background under the switcher. This setting should only be "
+"disabled when the theme already uses a transparent switcher and you want the "
+"themes setting to apply."
+msgstr ""
+"Permite que esta extensión modifique la configuración de transparencia y "
+"color de fondo de los paneles. Si se desactiva, la extensión solo aplicará "
+"un fondo difuminado debajo de los paneles. Esta configuración solo debe "
+"desactivarse cuando el tema ya utilice paneles transparentes y se desee "
+"aplicar la configuración del tema."
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->description
+#, fuzzy
+msgid "Override some of the OSD theme settings (recommended)"
+msgstr "Anular algunos ajustes del tema de los paneles (recomendado)"
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the OSD transparency and background color "
+"settings. If this is disabled the extension will only apply a blur "
+"background under the OSD. This setting should only be disabled when the "
+"theme already uses a transparent OSD and you want the themes setting to "
+"apply."
+msgstr ""
+"Permite que esta extensión modifique la configuración de transparencia y "
+"color de fondo de los paneles. Si se desactiva, la extensión solo aplicará "
+"un fondo difuminado debajo de los paneles. Esta configuración solo debe "
+"desactivarse cuando el tema ya utilice paneles transparentes y se desee "
+"aplicar la configuración del tema."
+
 #. 6.0->settings-schema.json->enable-overview-override->description
 msgid "Override the generic effect settings for the Overview"
 msgstr "Anular la configuración de efectos genérica de la Vista general"
@@ -595,6 +656,7 @@ msgstr "Anular la configuración de efectos genérica de la Vista general"
 #. 6.0->settings-schema.json->enable-appswitcher-override->tooltip
 #. 6.0->settings-schema.json->enable-tooltips-override->tooltip
 #. 6.0->settings-schema.json->enable-desklets-override->tooltip
+#. 6.0->settings-schema.json->enable-osd-override->tooltip
 msgid ""
 "Override the settings found on the \"Generic effect settings\" tab with "
 "unique settings for this cinnamon component."
@@ -639,6 +701,11 @@ msgstr ""
 #. 6.0->settings-schema.json->enable-desklets-override->description
 msgid "Override the generic effect settings for Desklets"
 msgstr "Anular la configuración de efectos genérica de los Desklets"
+
+#. 6.0->settings-schema.json->enable-osd-override->description
+#, fuzzy
+msgid "Override the generic effect settings for OSD windows"
+msgstr "Anular la configuración de efectos genérica de los Paneles"
 
 #. 6.0->settings-schema.json->enable-desklets-unique-settings->description
 msgid "Enable advanced options to apply unique settings for each Desklet"
@@ -803,6 +870,7 @@ msgstr "Atenuar/Colorear fondo (%)"
 #. 6.0->settings-schema.json->appswitcher-blendColor->description
 #. 6.0->settings-schema.json->tooltips-blendColor->description
 #. 6.0->settings-schema.json->desklets-blendColor->description
+#. 6.0->settings-schema.json->osd-blendColor->description
 msgid "Dimming overlay color"
 msgstr "Atenuación del color de superposición"
 
@@ -816,6 +884,7 @@ msgstr "Atenuación del color de superposición"
 #. 6.0->settings-schema.json->appswitcher-blendColor->tooltip
 #. 6.0->settings-schema.json->tooltips-blendColor->tooltip
 #. 6.0->settings-schema.json->desklets-blendColor->tooltip
+#. 6.0->settings-schema.json->osd-blendColor->tooltip
 msgid ""
 "Defines the color that is blended into the background based on the dimming "
 "control above. Use black for a normal dimming effect or some other color for "
@@ -836,6 +905,7 @@ msgstr "Ninguno / Transparente para el fondo de pantalla"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Simple static blur"
 msgstr "Desenfoque estático simple"
 
@@ -846,6 +916,7 @@ msgstr "Desenfoque estático simple"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian static blur"
 msgstr "Desenfoque gaussiano estático"
 
@@ -860,6 +931,7 @@ msgstr "Desenfoque dinámico gaussiano (si procede)"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Monte Carlo static blur"
 msgstr "Desenfoque Monte Carlo estático"
 
@@ -873,6 +945,7 @@ msgstr "Desenfoque dinámico Monte Carlo (si procede)"
 #. 6.0->settings-schema.json->desktop-blurType->description
 #. 6.0->settings-schema.json->appswitcher-blurType->description
 #. 6.0->settings-schema.json->desklets-blurType->description
+#. 6.0->settings-schema.json->osd-blurType->description
 msgid "Type of blur effect"
 msgstr "Tipo de efecto de desenfoque"
 
@@ -881,6 +954,7 @@ msgstr "Tipo de efecto de desenfoque"
 #. 6.0->settings-schema.json->expo-blurType->tooltip
 #. 6.0->settings-schema.json->desktop-blurType->tooltip
 #. 6.0->settings-schema.json->desklets-blurType->tooltip
+#. 6.0->settings-schema.json->osd-blurType->tooltip
 msgid "What type of blur algorithm should be used to blur the background"
 msgstr ""
 "Que tipo de algoritmo de desenfoque debe utilizarse para desenfocar el fondo."
@@ -895,6 +969,7 @@ msgstr ""
 #. 6.0->settings-schema.json->appswitcher-radius->description
 #. 6.0->settings-schema.json->tooltips-radius->description
 #. 6.0->settings-schema.json->desklets-radius->description
+#. 6.0->settings-schema.json->osd-radius->description
 msgid "Blur intensity"
 msgstr "Intensidad del desenfoque"
 
@@ -908,6 +983,7 @@ msgstr "Intensidad del desenfoque"
 #. 6.0->settings-schema.json->appswitcher-radius->tooltip
 #. 6.0->settings-schema.json->tooltips-radius->tooltip
 #. 6.0->settings-schema.json->desklets-radius->tooltip
+#. 6.0->settings-schema.json->osd-radius->tooltip
 msgid ""
 "Adjusts the intensity of the blur effect by changing the radius use by the "
 "effect."
@@ -924,6 +1000,7 @@ msgstr ""
 #. 6.0->settings-schema.json->appswitcher-saturation->description
 #. 6.0->settings-schema.json->tooltips-saturation->description
 #. 6.0->settings-schema.json->desklets-saturation->description
+#. 6.0->settings-schema.json->osd-saturation->description
 msgid "Background color saturation"
 msgstr "Saturación del color de fondo"
 
@@ -937,6 +1014,7 @@ msgstr "Saturación del color de fondo"
 #. 6.0->settings-schema.json->appswitcher-saturation->tooltip
 #. 6.0->settings-schema.json->tooltips-saturation->tooltip
 #. 6.0->settings-schema.json->desklets-saturation->tooltip
+#. 6.0->settings-schema.json->osd-saturation->tooltip
 msgid ""
 "Adjusts the color saturation of the background image from gray-scale to full "
 "color."
@@ -1001,6 +1079,7 @@ msgstr ""
 #. 6.0->settings-schema.json->desktop-blurType->options
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "None"
 msgstr "Ninguno"
 
@@ -1042,6 +1121,7 @@ msgstr "Transparente al fondo de pantalla"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian dynamic blur"
 msgstr "Desenfoque dinámico gaussiano"
 
@@ -1051,6 +1131,7 @@ msgstr "Desenfoque dinámico gaussiano"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Monte Carlo dynamic blur"
 msgstr "Desenfoque dinámico Monte Carlo"
 
@@ -1131,6 +1212,7 @@ msgstr ""
 
 #. 6.0->settings-schema.json->desktop-opacity->description
 #. 6.0->settings-schema.json->desklets-opacity->description
+#. 6.0->settings-schema.json->osd-opacity->description
 msgid "Dim/Colorize background Image (%)"
 msgstr "Atenuar/Colorear imagen de fondo (%)"
 
@@ -1199,6 +1281,15 @@ msgstr ""
 "fondo? Para el selector estándar se puede utilizar un tipo de desenfoque "
 "dinámico, pero para los selectores 3D siempre se utiliza el desenfoque "
 "estático, ya que estos no se benefician de los efectos dinámicos."
+
+#. 6.0->settings-schema.json->osd-slider-effects->description
+msgid "Apply effects to volumn and brightness OSD windows"
+msgstr ""
+
+#. 6.0->settings-schema.json->osd-workspace-effects->description
+#, fuzzy
+msgid "Apply effects to the workspace switching OSD window"
+msgstr "Aplicar efectos a los conmutadores Alt-Tab 3D"
 
 #. 6.0->settings-schema.json->windows-inclusion-list->description
 msgid "Application window inclusion list"
