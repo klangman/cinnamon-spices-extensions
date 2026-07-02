@@ -1,11 +1,24 @@
 # Changelog
 
+## 2.5.1
+
+* Fix for Panels disappearing when using a quick Alt-Tab press to switch to the previously focused window
+* Fix for Panel custom CSS settings not applying/unapplying properly unless you restart Cinnamon
+* Fix for the blurred background of panels disappearing after closing the active workspace
+* Fix for the standard Alt-Tab switcher effects not disabling after unchecking the Alt-Tab effect on the General Setup tab
+* Simplified tracking of visible windows for dynamic blurring, hopefully fixing some cases of sticky clones
+* Fixes cases were new windows added while showing desklets (Super+S) would not get added to the clones for Desklets
+* Fixed the Standard Alt-Tab switcher effects so that it respects the app switcher "Override" option
+* Fixed performance issue casued failing to disconnect a signal for the Classic Alt-Tab switcher
+* Fixed some cases where the blurred background was placed in the wrong location for the standards Alt-Tab switcher
+* Fixed a "flash" of the desktop image in the blurred standard Alt-Tab switcher when using Dynamic effects
+
 ## 2.5.0
 
 * Added the ability to apply effects to the Classic (default) Alt-Tab switcher
-* Added the Monte Carlo Blur alorithum from Blur-my-shell as a new blur option (static and dynamic)
-* Added option to hide panels when the 3d Alt-Tab switchers are used (default enabled)
-* Implemented atrifact mitigation techniques to eliminate artifacts with Dynamic Blur for Application Windows (also removed the "experimental" label for Dynamic Application Window effects).
+* Added the Monte Carlo Blur algorithm from Blur-my-shell as a new blur option (static and dynamic)
+* Added option to hide panels when the 3D Alt-Tab switchers are used (default enabled)
+* Implemented artifact mitigation techniques to eliminate artifacts with Dynamic Blur for Application Windows (also removed the "experimental" label for Dynamic Application Window effects).
 * Allow Desklets to use Dynamic Blurring so that the Super+S (show desklets) option can blur background windows under desklets
 * Added option to allow theme setting to remain for Notifications and Tooltips
 * Improved how window stacking is tracked for dynamic blurring (fixes issues with showing incorrect background windows)
@@ -68,7 +81,7 @@
 
 ## 1.6.1
 
-* Fixed a 1.6.0 regression where the dimming of desktop effects are not removed after disabiling the desktop effects on the general page in the config window.
+* Fixed a 1.6.0 regression where the dimming of desktop effects are not removed after disabling the desktop effects on the general page in the config window.
 * Added support for rounded cinnamon panels, but currently to enable rounded corners in Cinnamon panels you need to manually edit your cinnamon.css file.
 
 ## 1.6.0

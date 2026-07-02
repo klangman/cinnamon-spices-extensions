@@ -11,11 +11,11 @@ Cinnamon components you can apply effects to (currently):
 5. The Desktop background image **(#)**
 6. Desktop Notification popups **(#)**
 7. The panel tooltip popups **(#)**
-8. Alt-Tab switchers (the standard and 3D switchers)
+8. Alt-Tab switchers (both the standard and the 3D switchers)
 9. Application window backgrounds **(#)**
 10. Desklet backgrounds **(#)**
 
-**(#)** Note: The Blur Cinnamon effects for the (#) marked Cinnamon components above are disabled by default. They can be enabled in the Blur Cinnamon configuration window. Some effects will override your theme settings to force transparency.
+**(#)** Note: The Blur Cinnamon effects for the (#) marked Cinnamon components above are disabled by default. They can be enabled in the Blur Cinnamon configuration window. Some effects will, by default, override your theme settings to force transparency. This transparency override can be disabled in the Blur Cinnamon setting if you have a transparent theme and would like to have the themes settings remain.
 
 ## Background (Blur) Effect Options
 
@@ -39,7 +39,7 @@ Cinnamon components you can apply effects to (currently):
 - Makes the components transparent (when needed) so that the desktop background image effects are visible
 - Allows you to adjust the color saturation of the Cinnamon components. You can reduced saturation all the way down to gray scale
 - Uses a rounded corner effect to match your themes rounded corner settings, and provides manual rounded corner setting for application window effects so you can match the rounded corner of the application windows you choose to blur. This does NOT round window corners, it only allows the blurred background to match the rounding of it's window
-- Ability to changes the opacity of application windows so application window blur effects are visible under the window
+- Ability to change the opacity of application windows so application window blur effects are visible under the window
 - Option to add a backlight effect to the focused window using a background image blur effect spilling over the focused windows borders
 - You can use general settings across all Cinnamon components or use unique settings for each component type
 - Allows you to apply custom CSS code to panels to achieve a number of custom panel effects like rounded corners, borders, changing the panel width, etc. Careful though, you can mess up your panels, but remember everything will go back to normal if you simply remove any Custom CSS settings you added to Blur Cinnamon.
@@ -61,7 +61,7 @@ Using any of the above with Blur Cinnamon may have some odd side effects that wo
 
 1. The Applet popup menu effects are intended to be used with the Cinnamon (6.4) theme or the Mint-Y dark desktop themes. The effects might work will with some other themes but I have not tested them so the effects might not work out just right. You can try the Mint-Y light themes but it might be hard to read the menu items without some playing around with the settings and the background image. Blur Cinnamon Popup-menu effects are disabled by default.
 2. The Applet popup-menu effects works for all the applets that I have tested except "Cinnamenu". Cinnamenu is preventing other code from receiving the "open-state-changed" event which Blur Cinnamon uses to know when to apply popup-menu theme setting and when to resize and show the blur background element. This issue is fixed in the latest Cinnamenu from [Fredcw GitHub](https://github.com/fredcw/Cinnamenu) but you will need to manually fix the current Cinnamon Spices version of Cinnamenu (see [here](https://github.com/linuxmint/cinnamon-spices-extensions/issues/873))
-3. This extension currently does not work under Wayland, it only works under X11. The extension automatically detects Wayland and disables most of the features of the extension.
+3. This extension currently **does <u>not</u> work under Wayland**, it only works under X11. The extension automatically detects Wayland and disables most of the features of the extension.
 
 ## Installation
 
@@ -72,25 +72,15 @@ Using any of the above with Blur Cinnamon may have some odd side effects that wo
 - Select the new "Blur Cinnamon" entry and then click the "+" button at the bottom of the window
 - Use the "gears" icon next to the "Blur Cinnamon" entry to open the setting window and setup the preferred behavior
 
-## Blurred Applciation Windows:
+## Blurred Application Windows:
 
-No application windows will have effects applied even with "Application windows" support enabled on the "General setup" tab of Blur Cinnamons configuation window. 
+Blur Cinnamon can apply a blurred background to just about any window, but no application windows will have effects applied unless the "Application windows" support is enabled on the "General setup" tab of the Blur Cinnamon configuration window **<u>and</u>** the table under the "Component specific settings" for "windows" has been setup to allow specific windows to have effects enabled. 
 
+Even then the effects will only be visible when the application window (i.e Terminal) is configured to be transparent.  Many Terminal programs have options in their preferences that allows the Terminal to be transparent.
 
+For windows that can't be configured to have transparent elements, you have the option of reducing the "Opacity" in Blur Cinnamon setting for the window, or by using the "Opacity Slider" extension. With a windows Opacity set to less than 100% you will see the Blur Cinnamon effects behind the window.
 
-You MUST enabled specific application windows in the "Componenet specific settings" tab under the "Windows" setting page in order to have effects appled. 
-
-
-
-Even then the effects will only be visible when the application window (i.e Terminal) is configured to be transparent. 
-
-
-
-For windows that can't be configied to have transparent elements, you have the option of reducing the "Opacity" in Blur Cinnamon setting for the window, or by using the "Opacity Slider" extension. With a windows Opacity set to less than 100% you will see the Blur Cinnamon effects behind the window.
-
-
-
-There is also a "Default window settings" entry in the Blur Cinnamon Windows setting page. With this entry enabled all normal windows will have effects applied. Specific windows can still be excluded by adding table entries for the windows you what to exclude and making sure the Enabled setting for the each entry is NOT checked.
+There is also a "Default window settings" entry in the Blur Cinnamon Windows setting page. With this entry enabled all normal windows will have effects applied. Specific windows can still be excluded by adding table entries for the windows you what to exclude and making sure the Enabled setting for the entry is **NOT** checked.
 
 ## Custom Panel CSS Examples:
 

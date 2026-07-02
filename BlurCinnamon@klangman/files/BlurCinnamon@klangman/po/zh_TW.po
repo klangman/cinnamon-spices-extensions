@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: BlurCinnamon@klangman 2.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-"
 "extensions/issues\n"
-"POT-Creation-Date: 2026-06-06 17:40-0400\n"
+"POT-Creation-Date: 2026-07-02 14:23-0400\n"
 "PO-Revision-Date: 2026-06-01 18:00+0800\n"
 "Last-Translator: Alang Hsu <alang.hsu@gmail.com>\n"
 "Language-Team: \n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. 6.0/extension.js:2600 6.0/extension.js:2603 6.0/extension.js:2713
+#. 6.0/extension.js:2819 6.0/extension.js:2822 6.0/extension.js:2932
 msgid "Default window settings"
 msgstr "預設視窗設定"
 
-#. 6.0/extension.js:2861
+#. 6.0/extension.js:3080
 msgid "Error"
 msgstr "錯誤"
 
-#. 6.0/extension.js:2862
+#. 6.0/extension.js:3081
 msgid ""
 "Unable to determine the application or the WM_CLASS of the previously "
 "focused window, therefore Blur Cinnamon effects can not be applied to that "
@@ -32,11 +32,11 @@ msgid ""
 msgstr ""
 "無法判斷先前聚焦的視窗或其 WM_CLASS，因此無法對該視窗套用 Blur Cinnamon 效果"
 
-#. 6.0/extension.js:3716
+#. 6.0/extension.js:3963
 msgid "Welcome to Blur Cinnamon"
 msgstr "歡迎使用 Blur Cinnamon"
 
-#. 6.0/extension.js:3717
+#. 6.0/extension.js:3964
 #, fuzzy
 msgid ""
 "Hope you are enjoying your new Panel, Expo, Overview and Alt-Tab effects.\n"
@@ -52,15 +52,15 @@ msgstr ""
 "開啟 Blur Cinnamon 設定以啟用其他桌面元素（如選單、通知和視窗）的效果，或停用"
 "預設啟用的元件效果。您也可以調整效果屬性，如模糊強度、色彩飽和度和調暗程度。"
 
-#. 6.0/extension.js:3721
+#. 6.0/extension.js:3968
 msgid "Open Blur Cinnamon Settings"
 msgstr "開啟 Blur Cinnamon 設定"
 
-#. 6.0/extension.js:3806
+#. 6.0/extension.js:4058
 msgid "Testing Blur Cinnamon Notification Effects"
 msgstr "測試 Blur Cinnamon 通知效果"
 
-#. 6.0/extension.js:3807
+#. 6.0/extension.js:4059
 msgid ""
 "This is how notifications will appear when using the current Blur Cinnamon "
 "Notification Popup effects.\n"
@@ -155,6 +155,13 @@ msgid ""
 "Note: The Notification effects are currently disabled under the \"General "
 "setup\" tab."
 msgstr "注意：通知效果目前在「一般設定」標籤下已停用。"
+
+#. 6.0->settings-schema.json->osd-warning->description
+#, fuzzy
+msgid ""
+"Note: The On-Screen-Display effects are currently disabled under the "
+"\"General setup\" tab."
+msgstr "注意：面板效果目前在「一般設定」標籤下已停用。"
 
 #. 6.0->settings-schema.json->overview-warning->description
 msgid ""
@@ -424,6 +431,17 @@ msgid ""
 msgstr ""
 "將效果套用至 Desklet 背景。Desklet 必須設為透明，Blur Cinnamon 效果才能顯示。"
 
+#. 6.0->settings-schema.json->enable-osd-effects->description
+msgid "On-screen display"
+msgstr ""
+
+#. 6.0->settings-schema.json->enable-osd-effects->tooltip
+msgid ""
+"Apply effects to the on-screen display (OSD) background. The OSD is used "
+"when changing volumn using the media keys, changing the screen brightness, "
+"and switching workspaces."
+msgstr ""
+
 #. 6.0->settings-schema.json->focused-window-backlight->description
 msgid "Focused window backlight effect"
 msgstr "聚焦視窗背光效果"
@@ -508,6 +526,43 @@ msgstr ""
 "方套用模糊背景。僅當主題已使用透明面板且您希望套用主題設定時，才應停用此設"
 "定。"
 
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->description
+#, fuzzy
+msgid ""
+"Override some of the standard Alt-Tab switcher theme settings (recommended)"
+msgstr "覆寫部分面板主題設定（建議）"
+
+#. 6.0->settings-schema.json->allow-transparent-color-switcher->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the standard Alt-Tab switcher transparency "
+"and background color settings. If this is disabled the extension will only "
+"apply a blur background under the switcher. This setting should only be "
+"disabled when the theme already uses a transparent switcher and you want the "
+"themes setting to apply."
+msgstr ""
+"允許此擴充套件修改面板的透明度和背景色彩設定。如果停用，擴充套件只會在面板下"
+"方套用模糊背景。僅當主題已使用透明面板且您希望套用主題設定時，才應停用此設"
+"定。"
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->description
+#, fuzzy
+msgid "Override some of the OSD theme settings (recommended)"
+msgstr "覆寫部分面板主題設定（建議）"
+
+#. 6.0->settings-schema.json->allow-transparent-color-osd->tooltip
+#, fuzzy
+msgid ""
+"Allow this extension to modify the OSD transparency and background color "
+"settings. If this is disabled the extension will only apply a blur "
+"background under the OSD. This setting should only be disabled when the "
+"theme already uses a transparent OSD and you want the themes setting to "
+"apply."
+msgstr ""
+"允許此擴充套件修改面板的透明度和背景色彩設定。如果停用，擴充套件只會在面板下"
+"方套用模糊背景。僅當主題已使用透明面板且您希望套用主題設定時，才應停用此設"
+"定。"
+
 #. 6.0->settings-schema.json->enable-overview-override->description
 #, fuzzy
 msgid "Override the generic effect settings for the Overview"
@@ -522,6 +577,7 @@ msgstr "為 Overview 使用專屬效果設定"
 #. 6.0->settings-schema.json->enable-appswitcher-override->tooltip
 #. 6.0->settings-schema.json->enable-tooltips-override->tooltip
 #. 6.0->settings-schema.json->enable-desklets-override->tooltip
+#. 6.0->settings-schema.json->enable-osd-override->tooltip
 msgid ""
 "Override the settings found on the \"Generic effect settings\" tab with "
 "unique settings for this cinnamon component."
@@ -566,6 +622,11 @@ msgstr "為面板工具提示使用專屬效果設定"
 #, fuzzy
 msgid "Override the generic effect settings for Desklets"
 msgstr "為 Desklet 使用專屬效果設定"
+
+#. 6.0->settings-schema.json->enable-osd-override->description
+#, fuzzy
+msgid "Override the generic effect settings for OSD windows"
+msgstr "為面板使用專屬效果設定"
 
 #. 6.0->settings-schema.json->enable-desklets-unique-settings->description
 msgid "Enable advanced options to apply unique settings for each Desklet"
@@ -717,6 +778,7 @@ msgstr "調暗/著色背景（%）"
 #. 6.0->settings-schema.json->appswitcher-blendColor->description
 #. 6.0->settings-schema.json->tooltips-blendColor->description
 #. 6.0->settings-schema.json->desklets-blendColor->description
+#. 6.0->settings-schema.json->osd-blendColor->description
 msgid "Dimming overlay color"
 msgstr "調暗疊加色彩"
 
@@ -730,6 +792,7 @@ msgstr "調暗疊加色彩"
 #. 6.0->settings-schema.json->appswitcher-blendColor->tooltip
 #. 6.0->settings-schema.json->tooltips-blendColor->tooltip
 #. 6.0->settings-schema.json->desklets-blendColor->tooltip
+#. 6.0->settings-schema.json->osd-blendColor->tooltip
 msgid ""
 "Defines the color that is blended into the background based on the dimming "
 "control above. Use black for a normal dimming effect or some other color for "
@@ -749,6 +812,7 @@ msgstr "無 / 透明至桌布"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Simple static blur"
 msgstr "簡單靜態模糊"
 
@@ -759,6 +823,7 @@ msgstr "簡單靜態模糊"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian static blur"
 msgstr "高斯靜態模糊"
 
@@ -773,6 +838,7 @@ msgstr "高斯動態模糊（如適用）"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 #, fuzzy
 msgid "Monte Carlo static blur"
 msgstr "簡單靜態模糊"
@@ -788,6 +854,7 @@ msgstr "高斯動態模糊（如適用）"
 #. 6.0->settings-schema.json->desktop-blurType->description
 #. 6.0->settings-schema.json->appswitcher-blurType->description
 #. 6.0->settings-schema.json->desklets-blurType->description
+#. 6.0->settings-schema.json->osd-blurType->description
 msgid "Type of blur effect"
 msgstr "模糊效果類型"
 
@@ -796,6 +863,7 @@ msgstr "模糊效果類型"
 #. 6.0->settings-schema.json->expo-blurType->tooltip
 #. 6.0->settings-schema.json->desktop-blurType->tooltip
 #. 6.0->settings-schema.json->desklets-blurType->tooltip
+#. 6.0->settings-schema.json->osd-blurType->tooltip
 msgid "What type of blur algorithm should be used to blur the background"
 msgstr "要用哪種模糊演算法來模糊背景"
 
@@ -809,6 +877,7 @@ msgstr "要用哪種模糊演算法來模糊背景"
 #. 6.0->settings-schema.json->appswitcher-radius->description
 #. 6.0->settings-schema.json->tooltips-radius->description
 #. 6.0->settings-schema.json->desklets-radius->description
+#. 6.0->settings-schema.json->osd-radius->description
 #, fuzzy
 msgid "Blur intensity"
 msgstr "高斯模糊強度"
@@ -823,6 +892,7 @@ msgstr "高斯模糊強度"
 #. 6.0->settings-schema.json->appswitcher-radius->tooltip
 #. 6.0->settings-schema.json->tooltips-radius->tooltip
 #. 6.0->settings-schema.json->desklets-radius->tooltip
+#. 6.0->settings-schema.json->osd-radius->tooltip
 msgid ""
 "Adjusts the intensity of the blur effect by changing the radius use by the "
 "effect."
@@ -837,6 +907,7 @@ msgstr "透過變更效果使用的半徑來調整模糊效果的強度。"
 #. 6.0->settings-schema.json->appswitcher-saturation->description
 #. 6.0->settings-schema.json->tooltips-saturation->description
 #. 6.0->settings-schema.json->desklets-saturation->description
+#. 6.0->settings-schema.json->osd-saturation->description
 msgid "Background color saturation"
 msgstr "背景色彩飽和度"
 
@@ -850,6 +921,7 @@ msgstr "背景色彩飽和度"
 #. 6.0->settings-schema.json->appswitcher-saturation->tooltip
 #. 6.0->settings-schema.json->tooltips-saturation->tooltip
 #. 6.0->settings-schema.json->desklets-saturation->tooltip
+#. 6.0->settings-schema.json->osd-saturation->tooltip
 msgid ""
 "Adjusts the color saturation of the background image from gray-scale to full "
 "color."
@@ -903,6 +975,7 @@ msgstr ""
 #. 6.0->settings-schema.json->desktop-blurType->options
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "None"
 msgstr "無"
 
@@ -944,6 +1017,7 @@ msgstr "透明至桌布"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 msgid "Gaussian dynamic blur"
 msgstr "高斯動態模糊"
 
@@ -953,6 +1027,7 @@ msgstr "高斯動態模糊"
 #. 6.0->settings-schema.json->appswitcher-blurType->options
 #. 6.0->settings-schema.json->tooltips-blurType->options
 #. 6.0->settings-schema.json->desklets-blurType->options
+#. 6.0->settings-schema.json->osd-blurType->options
 #, fuzzy
 msgid "Monte Carlo dynamic blur"
 msgstr "高斯動態模糊"
@@ -1025,6 +1100,7 @@ msgstr ""
 
 #. 6.0->settings-schema.json->desktop-opacity->description
 #. 6.0->settings-schema.json->desklets-opacity->description
+#. 6.0->settings-schema.json->osd-opacity->description
 msgid "Dim/Colorize background Image (%)"
 msgstr "調暗/著色背景圖片（%）"
 
@@ -1078,6 +1154,15 @@ msgid ""
 "blur type can be used for the standard switcher but static blurring is "
 "always used for the 3D switchers as they do not benefit from dynamic effects."
 msgstr ""
+
+#. 6.0->settings-schema.json->osd-slider-effects->description
+msgid "Apply effects to volumn and brightness OSD windows"
+msgstr ""
+
+#. 6.0->settings-schema.json->osd-workspace-effects->description
+#, fuzzy
+msgid "Apply effects to the workspace switching OSD window"
+msgstr "為 Alt-Tab 應用程式切換器使用專屬效果設定"
 
 #. 6.0->settings-schema.json->windows-inclusion-list->description
 msgid "Application window inclusion list"
