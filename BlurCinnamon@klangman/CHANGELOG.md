@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.2
+
+* Fix a 2.5.1 regression with handling fullscreen windows
+
 ## 2.5.1
 
 * Fix for Panels disappearing when using a quick Alt-Tab press to switch to the previously focused window
